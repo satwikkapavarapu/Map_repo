@@ -97,13 +97,13 @@
         function pop_2022certifiedpopulationestimates_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2"><b>County:</b>' + (feature.properties['county'] !== null ? autolinker.link(feature.properties['county'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><b>County: </b>' + (feature.properties['county'] !== null ? autolinker.link(feature.properties['county'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><b>Municipality:</b>' + (feature.properties['municipality'] !== null ? autolinker.link(feature.properties['municipality'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><b>Municipality: </b>' + (feature.properties['municipality'] !== null ? autolinker.link(feature.properties['municipality'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><b>Population Estimate(As of 2023):</b>' + (feature.properties['july_1_2022_certified_population_estimate_july_1_2023_municipal_boundaries'] !== null ? autolinker.link(feature.properties['july_1_2022_certified_population_estimate_july_1_2023_municipal_boundaries'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><b>Population Estimate(As of 2023): </b>' + (feature.properties['july_1_2022_certified_population_estimate_july_1_2023_municipal_boundaries'] !== null ? autolinker.link(feature.properties['july_1_2022_certified_population_estimate_july_1_2023_municipal_boundaries'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['geo_point_2d'] !== null ? autolinker.link(feature.properties['geo_point_2d'].toLocaleString()) : '') + '</td>\
